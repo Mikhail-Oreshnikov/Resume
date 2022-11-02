@@ -4,83 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="keywords" content="html, css, portfolio, web, front-end, Misha, Михаил, Сайт, Сайт портфолио">
     <meta name="description" content="Здравствуйте меня зовут Орешников Михаил я начинаюший фронт-енд разработчик">
+
+    <link rel="stylesheet" href="css/style.css">
     <title>Сайт портфолио</title>
 </head>
 <body>
-    <img src="img/f45.jpg" alt="Photo" width="200px">
-    <h1>Михаил Орешников</h1>
 
-    <p>
-        Я начинаюший <strong>фронт-енд разработчик</strong>, обучаюсь на <strong>курсе Владелена Минина</strong>.
-    </p>
-    <p>
-        Я люблю <em>путешествовать, люблю машины и люблю решать задачки по программированию</em>.
-    </p>
+    <div class="container">
 
-    <p>
-        <b>Список социальные сетей:</b>
-    </p>
 
-    <div>
-        <a href="#"><del>Instagram</del></a>|<a href="https://t.me/+agPZAiGbXjE4NjE6" target="_blank">Telegram</a>|<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+
+    
+        <div class="info">
+            <img class="info__img" src="img/f45.jpg" alt="Photo" width="200px">
+            <div class="info_page">
+                <h1>Михаил Орешников</h1>
+                <p class="info__text">
+                    Я начинаюший фронт-енд разработчик, обучаюсь на курсе Владелена Минина. <br>
+                    Я люблю путешествовать, люблю машины и люблю решать задачки по программированию.
+                </p>
+
+                <h3 class="social">
+                    Список социальные сетей:
+                </h3>
+            
+                <div class="link">
+                    <a href="#" class="btn"><del>Instagram</del></a><a href="https://t.me/+agPZAiGbXjE4NjE6" class="btn" target="_blank">Telegram</a><a href="https://www.youtube.com/" class="btn" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </div>
+    
+
+    
+        <div class="card hobby">
+            <h2>Мои хобби</h2>
+            <ol>
+                <li>Путешествия</li>
+                <li>Спорт</li>
+                <li>Работа по дереву</li>
+                <li>Катания на лонгборде</li>
+            </ol>
+        </div>
+    
+        <div class="card work">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Названия</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Youtube</td>
+                        <td>Студент</td>
+                        <td>2021-сейчас</td>
+                    </tr>
+                    <tr>
+                        <td>НБСМЭ</td>
+                        <td>Санитар</td>
+                        <td>2020-сейчас</td>
+                    </tr>
+                    <tr>
+                        <td>ЯКнига</td>
+                        <td>Frontend</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="card contact">
+
+            <form action="#" class="form">
+                <h2>Связаться со мной</h2>
+
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="name">Ваше имя: </label>
+                            <input type="text" id="name" placeholder="Введите имя" tabindex="1">
+                        </div>
+                
+                        <div class="form__group">
+                            <label for="email">Ваш Email: </label>
+                            <input type="text" id="email" placeholder="Введите email" tabindex="2">
+                        </div>
+                    </div>
+            
+                    <div class="form__group">
+                        <label for="">Ваше сообщение:</label>
+                        <textarea name="" id="" cols="25" rows="5" placeholder="Введите сообщение..." tabindex="3"></textarea>
+                    </div>
+                <div>
+                    <button class="btn" type="submit">Отправить!</button>
+                </div>
+            
+        
+            </form>
+        </div>
     </div>
-
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Путешествия</li>
-        <li>Спорт</li>
-        <li>Работа по дереву</li>
-        <li>Катания на лонгборде</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Названия</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Youtube</td>
-                <td>Студент</td>
-                <td>2021-сейчас</td>
-            </tr>
-            <tr>
-                <td>ЯКнига</td>
-                <td>Frontend</td>
-                <td>2022</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form action="#">
-        <div>
-            <label for="name">Ваше имя: </label>
-            <input type="text" id="name" placeholder="Введите имя" tabindex="1">
-        </div>
-
-        <div>
-            <label for="email">Ваш Email: </label>
-            <input type="text" id="email" placeholder="Введите email" tabindex="2">
-        </div>
-
-        <div>
-            <label for="">Ваше сообщение:</label>
-            <br>
-            <textarea name="" id="" cols="25" rows="5" placeholder="Введите сообщение..." tabindex="3"></textarea>
-        </div>
-
-        <div>
-            <button type="submit">Отправить!</button>
-        </div>
-
-    </form>
 </body>
 </html> 
